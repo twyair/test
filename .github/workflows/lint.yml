@@ -1,0 +1,13 @@
+name: lint
+
+on:
+  pull_request:
+    paths-ignore:
+      - '.'
+      - '!README.md'
+jobs:
+  lint:
+    runs-on:
+      - self-hosted
+    steps:
+      - run: 'echo "No lint required"'
